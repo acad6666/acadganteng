@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" onkeypress="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE-edge"
+      
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="produk.css" />
+    <title>Games 1</title>
+  </head>
+  <body>
+    <div class="box" id="box">
+      <div class="score" id="score">
+        Ayo! bantu akmal melompati Sovi
+        <img src="AKMAL (2).png" alt="" id="akmal"/>
+        <img src="SOVI (2).png  " alt="" id="sovi"/>
+        <div class="roadContainer" id="roadContainer">
+          <img src="jalan.jpg" alt="" />
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const char = document.getElementById("akmal")
+    const sovi = document.getElementById("sovi")
+    const playerScore = document.getElementById("score")
+
+    let score = 0
+    let interval = null
+
+    let jumlahScore = ()=>{
+        score++
+        playerScore.innerHTML 
+    }
+
+    function jump(){
+        if(char.classList != "animate"){
+        char.classList.add("animate");
+        }
+        setTimeout(function(){
+            char.classList.remove("animate")
+        },500)
+        let score = 0
+        interval = setInterval(jumlahScore, 100)
+    }
+    
+   
+  </script>
+</html>

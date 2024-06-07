@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#box{
+    width: 900px;
+    height: 200px;
+    position: relative;
+    overflow: 
+}
+    
+#box #roadContainer {
+    height: 30px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+#box #roadContainer img{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    animation: 
+}
+
+#akmal img {
+    height: 500px;
+    width: 200px;
+}

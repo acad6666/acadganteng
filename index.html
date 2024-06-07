@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Hello World!</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        
+        <div class="container">
+            <div id="cloud-intro"></div>
+          </div>
+<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dp.html">Design Process</a></li>
+            <li><a href="produk.html">Produk 1</a></li>
+            <li><a href="produk2.html">Produk 2</a></li>
+</ul>
+<pre>
+<h1>About Starstudy</h1>\
+</pre>
+<h2>Starstudy merupakan sebuah situs web yang menyediakan penggabungan antara modul pembelajaran serta game. Starstudy merupakan nama yang kami ambil dari penggabungan kata ‘stars’ yang memiliki filosofi agar kita dapat memberikan cahaya atau manfaat bagi siswa/i yang membutuhkan dan ‘study’ yang berarti belajar.
+
+  Kami membuat dua program ini, yakni modul pembelajaran serta permainan dengan tujuan utama untuk membuat siswa semangat mengulang kembali pelajaran volume dari sekolah serta meminimalisir siswa/i untuk bermain aplikasi game</h2>
+<pre>
+<h3>About Us</h3>
+       
+</p>
+</pre>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="akmall.jpeg" style="width:50%">
+    <div class="text">Akmal Faiiruz</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="azzzzz.jpg" style="width:50%">
+    <div class="text">Muhammad Rasya Azzam</div>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="acad.jpg" style="width:50%"> 
+  <div class="text">Rasyad Satya Muttaqin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="sopi.jpeg" style="width:50%">
+  <div class="text">Sovi Aini Wibowo</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="jara.jpeg" style="width:50%">
+  <div class="text">Zahra Azkiya Prameswari</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</pre>
+
+</html>
